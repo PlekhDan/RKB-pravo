@@ -528,10 +528,34 @@ div.photo-4:hover div.photo-4-hover {
   color: white;
   font-size: 18px;
   font-weight: 400;
-  background-image: url("../IMG/icon-1-white.png");
   background-repeat: no-repeat;
   background-size: 36px auto;
   background-position: 0px 50%;
+}
+
+.cell-text-title-1 {
+  background-image: url("../IMG/icon-1-white.png");
+}
+.cell-text-title-2 {
+  background-image: url("../IMG/icon-2.png");
+}
+.cell-text-title-3 {
+  background-image: url("../IMG/icon-3.png");
+}
+.cell-text-title-4 {
+  background-image: url("../IMG/icon-4.png");
+}
+.cell-text-title-5 {
+  background-image: url("../IMG/icon-5.png");
+}
+.cell-text-title-6 {
+  background-image: url("../IMG/icon-6.png");
+}
+.cell-text-title-7 {
+  background-image: url("../IMG/icon-7.png");
+}
+.cell-text-title-8 {
+  background-image: url("../IMG/icon-8.png");
 }
 
 .close {
@@ -549,27 +573,28 @@ div.photo-4:hover div.photo-4-hover {
   background-color: #330033;
 }
 
-.cell-text-1::before {
+.cell-text-paragraph::before {
   display: block;
   clear: both;
   content: "";
 }
 
-.cell-text-1 {
+.cell-text-paragraph {
   min-height: 365px;
   margin-bottom: 40px;
   padding-left: 20px;
 }
 
-.cell-text-1 ul {
+.paragraph {
   list-style-type: none;
   list-style-position: inside;
   line-height: 2;
 }
 
-.cell-text-1 li::before {
+.cell-text-paragraph li::before {
   padding-right: 10px;
   content: "—";
+  /*content: "»";*/
 }
 
 .btn {
