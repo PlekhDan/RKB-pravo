@@ -36,11 +36,16 @@ a {
 }
 
 .main {
-  //background-color: lightgrey;
-  min-height: 800px;
+  min-height: 550px;
   height: 100vh;
   background: url("../images/main.png") no-repeat 40% 90%;
   background-size: cover;
+  @media (max-width: $r_480) {
+    background: url("../images/main.png") no-repeat 53% 85%;
+  }
+  @media (max-width: $r_mobs) {
+    background: url("../images/main.png") no-repeat 50% 30%;
+  }
 }
 
 .info {
@@ -91,7 +96,20 @@ a {
   }
 
   @media (max-width: $r_tab) {
-    display: none;
+    &__block {
+      justify-content: space-around;
+    }
+    &__item1 {
+      display: none;
+    }
+  }
+  @media (max-width: $r_480) {
+    &__block {
+      justify-content: flex-start;
+    }
+    &__item2 {
+      display: none;
+    }
   }
 }
 
@@ -215,16 +233,11 @@ a {
   &__item {
     display: block;
     width: 100%;
-    //height: 4px;
     height: 2px;
     margin-bottom: 10px;
     background-color: $blue;
     border-radius: 20px;
     transition: all .2s linear;
-    @media (max-width: $r_480) {
-      //height: 2px;
-      //margin-bottom: 10px;
-    }
   }
 
 }

@@ -36,10 +36,20 @@ a {
 }
 
 .main {
-  min-height: 800px;
+  min-height: 550px;
   height: 100vh;
   background: url("../images/main.png") no-repeat 40% 90%;
   background-size: cover;
+}
+@media (max-width: 480px) {
+  .main {
+    background: url("../images/main.png") no-repeat 53% 85%;
+  }
+}
+@media (max-width: 320px) {
+  .main {
+    background: url("../images/main.png") no-repeat 50% 30%;
+  }
 }
 
 .info {
@@ -84,7 +94,18 @@ a {
   background-image: url("../images/icon-w-phone.png");
 }
 @media (max-width: 768px) {
-  .info {
+  .info__block {
+    justify-content: space-around;
+  }
+  .info__item1 {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .info__block {
+    justify-content: flex-start;
+  }
+  .info__item2 {
     display: none;
   }
 }
@@ -204,6 +225,7 @@ a {
   border-radius: 20px;
   transition: all 0.2s linear;
 }
+
 @media (max-width: 1080px) {
   .nav {
     display: none;
