@@ -36,7 +36,6 @@ a {
 }
 
 .main {
-  min-height: 550px;
   height: 100vh;
   background: url("../images/main.png") no-repeat 40% 90%;
   background-size: cover;
@@ -284,7 +283,7 @@ a {
 }
 @media (max-width: 480px) {
   .promo__title {
-    font-size: 3.2rem;
+    font-size: 3rem;
     padding: 0 4rem;
   }
   .promo__btns {
@@ -294,7 +293,6 @@ a {
 }
 @media (max-width: 320px) {
   .promo__title {
-    font-size: 3rem;
     padding: 0 1rem;
   }
 }

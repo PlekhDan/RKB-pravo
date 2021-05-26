@@ -36,7 +36,7 @@ a {
 }
 
 .main {
-  min-height: 550px;
+  //min-height: 550px;
   height: 100vh;
   background: url("../images/main.png") no-repeat 40% 90%;
   background-size: cover;
@@ -290,16 +290,10 @@ a {
 
   }
   @media (max-width: $r_desk) {
-    //margin: 0 auto;
     &__title {
       font-size: 4rem;
       margin: 5rem 0;
-      //padding: 0 4rem;
     }
-    //&__btns {
-    //  flex-direction: column;
-    //  align-items: center;
-    //}
     &__btn {
       font-size: 1.6rem;
       margin-bottom: 2rem;
@@ -313,7 +307,7 @@ a {
   }
   @media (max-width: $r_480) {
     &__title {
-      font-size: 3.2rem;
+      font-size: 3rem;
       padding: 0 4rem;
     }
     &__btns {
@@ -323,7 +317,6 @@ a {
   }
   @media (max-width: $r_mobs) {
     &__title {
-      font-size: 3rem;
       padding: 0 1rem;
     }
 
