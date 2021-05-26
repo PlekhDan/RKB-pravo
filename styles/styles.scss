@@ -215,11 +215,16 @@ a {
   &__item {
     display: block;
     width: 100%;
-    height: 4px;
-    margin-bottom: 8px;
+    //height: 4px;
+    height: 2px;
+    margin-bottom: 10px;
     background-color: $blue;
     border-radius: 20px;
     transition: all .2s linear;
+    @media (max-width: $r_480) {
+      //height: 2px;
+      //margin-bottom: 10px;
+    }
   }
 
 }
@@ -298,12 +303,17 @@ a {
       font-size: 3.2rem;
       padding: 0 4rem;
     }
+    &__btns {
+      flex-direction: column;
+      align-items: center;
+    }
   }
   @media (max-width: $r_mobs) {
     &__title {
       font-size: 3rem;
       padding: 0 1rem;
     }
+
   }
 }
 
