@@ -437,6 +437,7 @@ p {
 }
 @media (max-width: 768px) {
   .company__employees {
+    display: none;
     grid-template-columns: 600px;
     grid-template-rows: repeat(4, auto);
   }
@@ -508,11 +509,6 @@ p {
   color: #330033;
   font-weight: 300;
   padding: 0 4rem;
-}
-@media (max-width: 768px) {
-  .employee {
-    display: none;
-  }
 }
 .employee__wrap {
   width: 100%;

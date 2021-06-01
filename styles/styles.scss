@@ -441,6 +441,7 @@ p {
       padding-right: 0;
     }
     @media (max-width: $r_tab) {
+      display: none;
       grid-template-columns: 600px;
       grid-template-rows: repeat(4, auto);
     }
@@ -517,7 +518,7 @@ p {
   font-weight: 300;
   padding: 0 4rem;
   @media (max-width: $r_tab) {
-    display: none;
+    //display: none;
   }
   &__wrap {
     width: 100%;
