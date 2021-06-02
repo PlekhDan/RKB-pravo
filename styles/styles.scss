@@ -448,13 +448,14 @@ p {
   }
 
   &__employee {
+    //display: flex;
     position: relative;
     border-radius: 0.5rem;
     background-color: lightgrey;
-    @media (max-width: $r_tab) {
-      width: 140px;
-      height: 140px;
-    }
+    //@media (max-width: $r_tab) {
+    //  //width: 140px;
+    //  //height: 140px;
+    //}
     &:after {
       clear: both;
       content: "Подробнее";
@@ -474,8 +475,10 @@ p {
       color: $purple;
       transition: 0.8s;
     }
+
     &:hover {
       cursor: pointer;
+
       &:after {
         opacity: 1;
       }
@@ -514,19 +517,25 @@ p {
 .employee {
   display: flex;
   justify-content: center;
-  color:$purple;
+  color: $purple;
   font-weight: 300;
   padding: 0 4rem;
-  @media (max-width: $r_tab) {
-    //display: none;
-  }
+  flex-direction: column;
+
   &__wrap {
     width: 100%;
     border: $green 1px solid;
     border-radius: .5rem;
     padding: 4rem 4rem 0 4rem;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+    @media (max-width: $r_tab) {
+      padding: 2rem 2rem 0 2rem;
+    }
   }
+
   &__photo {
+    position: relative;
     width: 240px;
     height: 280px;
     float: left;
@@ -534,17 +543,61 @@ p {
     border-radius: .5rem;
     margin-right: 4rem;
     margin-bottom: 2rem;
+    @media (max-width: $r_tab) {
+      width: 140px;
+      height: 140px;
+      margin-right: 2rem;
+    }
   }
+
   &__text {
     margin-bottom: 4rem;
+    @media (max-width: $r_tab) {
+      margin-bottom: 2rem;
+    }
   }
+
   &__fullname {
     margin: 0;
     font-weight: 400;
   }
 }
+
 .hidden {
   display: none;
+}
+
+.expand {
+  display: none;
+  @media (max-width: $r_tab) {
+    display: block;
+    position: absolute;
+    padding: 1rem;
+    width: 100%;
+    bottom: 0;
+    box-sizing: border-box;
+    border-radius: 0 0 0.5rem 0.5rem;
+    background-color: $yellow;
+    background-image: url("../images/icon-next-down.png");
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+    color: $purple;
+    cursor: pointer;
+  }
+}
+
+.dots {
+  display: none;
+  @media (max-width: $r_tab) {
+    display: inline;
+  }
+}
+
+.more {
+  display: inline;
+  @media (max-width: $r_tab) {
+    display: none;
+  }
 }
 
 

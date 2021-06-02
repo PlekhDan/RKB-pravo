@@ -447,12 +447,6 @@ p {
   border-radius: 0.5rem;
   background-color: lightgrey;
 }
-@media (max-width: 768px) {
-  .company__employee {
-    width: 140px;
-    height: 140px;
-  }
-}
 .company__employee:after {
   clear: both;
   content: "Подробнее";
@@ -509,14 +503,23 @@ p {
   color: #330033;
   font-weight: 300;
   padding: 0 4rem;
+  flex-direction: column;
 }
 .employee__wrap {
   width: 100%;
   border: #339999 1px solid;
   border-radius: 0.5rem;
   padding: 4rem 4rem 0 4rem;
+  box-sizing: border-box;
+  margin-bottom: 2rem;
+}
+@media (max-width: 768px) {
+  .employee__wrap {
+    padding: 2rem 2rem 0 2rem;
+  }
 }
 .employee__photo {
+  position: relative;
   width: 240px;
   height: 280px;
   float: left;
@@ -525,8 +528,20 @@ p {
   margin-right: 4rem;
   margin-bottom: 2rem;
 }
+@media (max-width: 768px) {
+  .employee__photo {
+    width: 140px;
+    height: 140px;
+    margin-right: 2rem;
+  }
+}
 .employee__text {
   margin-bottom: 4rem;
+}
+@media (max-width: 768px) {
+  .employee__text {
+    margin-bottom: 2rem;
+  }
 }
 .employee__fullname {
   margin: 0;
@@ -535,6 +550,45 @@ p {
 
 .hidden {
   display: none;
+}
+
+.expand {
+  display: none;
+}
+@media (max-width: 768px) {
+  .expand {
+    display: block;
+    position: absolute;
+    padding: 1rem;
+    width: 100%;
+    bottom: 0;
+    box-sizing: border-box;
+    border-radius: 0 0 0.5rem 0.5rem;
+    background-color: #ffff66;
+    background-image: url("../images/icon-next-down.png");
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+    color: #330033;
+    cursor: pointer;
+  }
+}
+
+.dots {
+  display: none;
+}
+@media (max-width: 768px) {
+  .dots {
+    display: inline;
+  }
+}
+
+.more {
+  display: inline;
+}
+@media (max-width: 768px) {
+  .more {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
