@@ -70,6 +70,9 @@ p {
   }
 }
 
+
+// -- section main --
+
 .main {
   position: relative;
   min-height: 100vh;
@@ -361,14 +364,12 @@ p {
   }
   @media (max-width: $r_600) {
     &__title {
-      //font-size: 3rem;
       margin: 4rem 0;
       padding: 0 2rem;
     }
   }
   @media (max-width: $r_480) {
     &__title {
-      //font-size: 3rem;
       padding: 0 4rem;
     }
     &__btns {
@@ -385,6 +386,8 @@ p {
   }
 }
 
+
+// -- section company --
 
 .company {
   position: relative;
@@ -600,4 +603,286 @@ p {
   }
 }
 
+
+// -- section services --
+
+.services {
+  position: relative;
+
+  &__main {
+    padding: 10rem 4rem 4rem;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-rows: repeat(4, 10rem);
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+    position: relative;
+    @media (max-width: $r_tab) {
+      grid-gap: 2rem;
+    }
+    @media (max-width: $r_480) {
+      grid-template-rows: repeat(8, 6.2rem);
+      grid-template-columns: 1fr;
+      grid-gap: 1rem;
+    }
+  }
+
+  &__cell {
+    display: flex;
+    border: 1px solid $green;
+    border-radius: .5rem;
+    background-image: url("../images/icon-next-right.png");
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+    transition: 0.8s;
+    @media (max-width: $r_600) {
+      background: none;
+    }
+    &:hover {
+      background-position: 95% 50%;
+    }
+
+    &:active {
+      border: none;
+      background-color: rgba(51, 153, 153, 0.5);
+    }
+  }
+}
+
+.cell {
+  position: relative;
+  display: flex;
+  padding: 2rem;
+  flex-grow: 1;
+  align-items: center;
+  &:hover {
+    cursor: pointer;
+  }
+  @media (max-width: $r_480) {
+    padding: 0;
+  }
+
+  &__icon {
+    position: absolute;
+    display: inline-block;
+    height: 6rem;
+    width: 6rem;
+    background-color: $yellow;
+    border-radius: .5rem;
+    background-repeat: no-repeat;
+    background-size: 3.6rem auto;
+    background-position: 50% 50%;
+    transition: 0.8s;
+    @media (max-width: $r_480) {
+      border-radius: .5rem 0 0 .5rem;
+    }
+  }
+
+  &__icon-1 {
+    background-image: url("../images/icon-money.png");
+  }
+
+  &__icon-2 {
+    background-image: url("../images/icon-protection.png");
+  }
+
+  &__icon-3 {
+    background-image: url("../images/icon-job.png");
+  }
+
+  &__icon-4 {
+    background-image: url("../images/icon-family.png");
+  }
+
+  &__icon-5 {
+    background-image: url("../images/icon-home.png");
+  }
+
+  &__icon-6 {
+    background-image: url("../images/icon-bag.png");
+  }
+
+  &__icon-7 {
+    background-image: url("../images/icon-page.png");
+  }
+
+  &__icon-8 {
+    background-image: url("../images/icon-question.png");
+  }
+
+  &__title {
+    position: absolute;
+    padding-left: 8rem;
+    top: 50%;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: $purple;
+    transform: translate(0, -50%);
+    @media (max-width: $r_480) {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__text {
+    display: none;
+    position: absolute;
+    background-color: rgba(51, 153, 153, 1);
+    color: $white;
+    font-weight: 300;
+    border-radius: .5rem;
+    padding: 4rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 50rem;
+    box-sizing: border-box;
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    @media (max-width: $r_tab) {
+      padding: 2rem;
+    }
+
+    &_title-wrap {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+    }
+
+    &_title {
+      padding: 2rem 2rem 2rem 8rem;
+      color: $white;
+      font-size: 1.8rem;
+      font-weight: 400;
+      background-repeat: no-repeat;
+      background-size: 3.6rem auto;
+      background-position: 0 50%;
+      @media (max-width: $r_375) {
+        font-size: 1.6rem;
+      }
+    }
+
+    &_title-1 {
+      background-image: url("../images/icon-w-money.png");
+    }
+
+    &_title-2 {
+      background-image: url("../images/icon-w-protection.png");
+    }
+
+    &_title-3 {
+      background-image: url("../images/icon-w-job.png");
+    }
+
+    &_title-4 {
+      background-image: url("../images/icon-w-family.png");
+    }
+
+    &_title-5 {
+      background-image: url("../images/icon-w-home.png");
+    }
+
+    &_title-6 {
+      background-image: url("../images/icon-w-bag.png");
+    }
+
+    &_title-7 {
+      background-image: url("../images/icon-w-page.png");
+    }
+
+    &_title-8 {
+      background-image: url("../images/icon-w-question.png");
+    }
+
+    &_list {
+      margin-bottom: 6rem;
+    }
+
+    &_item {
+      margin: 0;
+      list-style-type: none;
+      list-style-position: inside;
+      line-height: 2;
+      @media (max-width: $r_tab) {
+        padding-left: 2rem;
+      }
+      @media (max-width: $r_375) {
+        padding-left: 0;
+      }
+    }
+
+    &_li::before {
+      padding-right: 10px;
+      content: "—";
+    }
+  }
+
+  &__btn-wrap {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: 4rem;
+    bottom: 4rem;
+    @media (max-width: $r_tab) {
+      right: 2rem;
+      bottom: 2rem;
+    }
+  }
+
+  &__btn {
+    background-color: $yellow;
+    text-transform: uppercase;
+    padding: 15px 40px;
+    color: $blue;
+    border-radius: .5rem;
+    font-weight: 400;
+
+    &:hover {
+      color: $purple;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+    }
+
+    &:active {
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
+.services__cell:hover .cell__icon {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.fake-check {
+  display: none;
+}
+
+.fake-check:checked + .cell__text {
+  display: block;
+}
+
+.close {
+  display: inline-block;
+  width: 10rem;
+  height: 6rem;
+  float: right;
+  background-image: url("../images/icon-close.png");
+  background-repeat: no-repeat;
+  background-size: 3.6rem auto;
+  background-position: 100% 0;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+
+// -- section feedback --
+
+.feedback {
+  //position: relative;
+  //background-color: blueviolet;
+  height: 50rem;
+}
 

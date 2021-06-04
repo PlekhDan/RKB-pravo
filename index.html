@@ -256,160 +256,298 @@
     </div>
 </section>
 
-<script>
-    let HIDDEN_CLASS_NAME = "hidden";
-    let TARGET_CLASS_NAME = "target";
-    let SOURCE_CLASS_NAME = "source";
+<!-- section services -->
+<section class="section services">
+    <div class="container">
+        <div class="services__main">
+            <h2 class="title">Перечень оказываемых услуг</h2>
+            <div class="services__grid">
+                <div class="services__cell">
+                    <label class="cell" for="fake-check-1">
+                        <span class="cell__icon cell__icon-1"></span>
+                        <span class="cell__title">Банкротство</span>
+                    </label>
+                    <input class="fake-check" id="fake-check-1" type="checkbox">
+                    <div class="cell__text">
+                        <div class="cell__text_title-wrap">
+                            <span class="cell__text_title cell__text_title-1">Банкротство</span>
+                            <label class="close" for="fake-check-1"></label>
+                        </div>
+                        <div class="cell__text_list">
+                            <ul class="cell__text_item">
+                                <li class="cell__text_li">Cопровождение процедур банкротства как на стороне должника,
+                                    так и на стороне кредитора;
+                                </li>
+                                <li class="cell__text_li">защита и оспаривание сделок должника, возврат выведенных
+                                    активов;
+                                </li>
+                                <li class="cell__text_li">сопровождение процесса включения в реестр требований
+                                    кредиторов;
+                                </li>
+                                <li class="cell__text_li">недопущение включения в реестр необоснованных требований
+                                    кредиторов;
+                                </li>
+                                <li class="cell__text_li">назначение и сопровождение работы арбитражного управляющего;
+                                </li>
+                                <li class="cell__text_li">сопровождение мероприятий по привлечению контролирующих лиц
+                                    должника к ответственности (уголовной, гражданско-правовой);
+                                </li>
+                                <li class="cell__text_li">защита от необоснованного привлечения к субсидиарной
+                                    ответственности;
+                                </li>
+                                <li class="cell__text_li">подготовка правовых заключений, проведение консультаций по
+                                    вопросам банкротства различной степени сложности.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="cell__btn-wrap">
+                            <div class="cell__btn">задать вопрос</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__cell">
+                    <label class="cell" for="fake-check-2">
+                        <span class="cell__icon cell__icon-2"></span>
+                        <span class="cell__title">Защита прав потребителя</span>
+                    </label>
+                    <input class="fake-check" id="fake-check-2" type="checkbox">
+                    <div class="cell__text">
+                        <div class="cell__text_title-wrap">
+                            <span class="cell__text_title cell__text_title-2">Защита прав потребителя</span>
+                            <label class="close" for="fake-check-2"></label>
+                        </div>
+                        <div class="cell__text_list">
+                            <ul class="cell__text_item">
+                                <li class="cell__text_li">Сопровождение споров
+                                    продавцами/производителями/исполнителями/клиентами;
+                                </li>
+                                <li class="cell__text_li">взыскание неустойки по ДДУ;</li>
+                                <li class="cell__text_li">сопровождение споров в сфере страхования
+                                    (ОСАГО, КАСКО, страхование жизни и пр.);
+                                </li>
+                                <li class="cell__text_li">подготовка претензий, проведение переговоров, составление
+                                    исковых заявлений;
+                                </li>
+                                <li class="cell__text_li">представление интересов в суде.</li>
+                            </ul>
+                        </div>
+                        <div class="cell__btn-wrap">
+                            <div class="cell__btn">задать вопрос</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__cell">
+                    <label class="cell" for="fake-check-3">
+                        <span class="cell__icon cell__icon-3"></span>
+                        <span class="cell__title">Корпоративное право</span>
+                    </label>
+                    <input class="fake-check" id="fake-check-3" type="checkbox">
+                    <div class="cell__text">
+                        <div class="cell__text_title-wrap">
+                            <span class="cell__text_title cell__text_title-3">Корпоративное право</span>
+                            <label class="close" for="fake-check-3"></label>
+                        </div>
+                        <div class="cell__text_list">
+                            <ul class="cell__text_item">
+                                <li class="cell__text_li">Подготовка, структурирование и проведение сделок;</li>
+                                <li class="cell__text_li">сопровождение при реорганизации и реструктуризации компаний и
+                                    активов;
+                                </li>
+                                <li class="cell__text_li">Due Diligence;</li>
+                                <li class="cell__text_li">подготовка корпоративных договоров, договоров купли-продажи
+                                    долей/акций;
+                                </li>
+                                <li class="cell__text_li">разработка внутренних документов юридического лица
+                                    (устав, положения, протоколы, регламенты, решения и т.д.);
+                                </li>
+                                <li class="cell__text_li">сопровождение и консультирование по различным корпоративным
+                                    вопросам деятельности компаний.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="cell__btn-wrap">
+                            <div class="cell__btn">задать вопрос</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__cell">
+                    <label class="cell" for="fake-check-4">
+                        <span class="cell__icon cell__icon-4"></span>
+                        <span class="cell__title">Семейное право</span>
+                    </label>
+                    <input class="fake-check" id="fake-check-4" type="checkbox">
+                    <div class="cell__text">
+                        <div class="cell__text_title-wrap">
+                            <span class="cell__text_title cell__text_title-4">Семейное право</span>
+                            <label class="close" for="fake-check-4"></label>
+                        </div>
+                        <div class="cell__text_list">
+                            <ul class="cell__text_item">
+                                <li class="cell__text_li">Консультации по семейно-правовым вопросам имущественного
+                                    и неимущественного характера;
+                                </li>
+                                <li class="cell__text_li">сопровождение на всех этапах, в том числе в судах, споров
+                                    по расторжению брака, признания брака недействительным, раздел имущества, алиментам,
+                                    определению места жительства детей, определению порядка общения,
+                                    лишению и ограничению родительских прав, установлению и оспариванию отцовства,
+                                    признанию брачного договора недействительным;
+                                </li>
+                                <li class="cell__text_li">помощь в составлении, изменении и расторжении брачного
+                                    договора.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="cell__btn-wrap">
+                            <div class="cell__btn">задать вопрос</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__cell">
+                    <label class="cell" for="fake-check-5">
+                        <span class="cell__icon cell__icon-5"></span>
+                        <span class="cell__title">Недвижимость</span>
+                    </label>
+                    <input class="fake-check" id="fake-check-5" type="checkbox">
+                    <div class="cell__text">
+                        <div class="cell__text_title-wrap">
+                            <span class="cell__text_title cell__text_title-5">Недвижимость</span>
+                            <label class="close" for="fake-check-5"></label>
+                        </div>
+                        <div class="cell__text_list">
+                            <ul class="cell__text_item">
+                                <li class="cell__text_li">Разработка договоров, сопровождение и структурирование сделок
+                                    с недвижимостью
+                                    (купля-продажа, аренда, дарение);
+                                </li>
+                                <li class="cell__text_li">проверка юридической чистоты сделки;</li>
+                                <li class="cell__text_li">сопровождение процедуры регистрации прав на недвижимое
+                                    имущество;
+                                </li>
+                                <li class="cell__text_li">представление интересов клиента в судебных спорах,
+                                    в том числе по спорам об аренде, делам об оспаривании кадастровой стоимости.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="cell__btn-wrap">
+                            <div class="cell__btn">задать вопрос</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__cell">
+                    <label class="cell" for="fake-check-6">
+                        <span class="cell__icon cell__icon-6"></span>
+                        <span class="cell__title">Юридическое<br>сопровождение бизнеса</span>
+                    </label>
+                    <input class="fake-check" id="fake-check-6" type="checkbox">
+                    <div class="cell__text">
+                        <div class="cell__text_title-wrap">
+                            <span class="cell__text_title cell__text_title-6">Юридическое сопровождение бизнеса</span>
+                            <label class="close" for="fake-check-6"></label>
+                        </div>
+                        <div class="cell__text_list">
+                            <ul class="cell__text_item">
+                                <li class="cell__text_li">Консультации по текущим вопросам хозяйственной деятельности;
+                                </li>
+                                <li class="cell__text_li">сопровождение договорной работы;</li>
+                                <li class="cell__text_li">презентационно-исковая работа и ведение дел в суде;</li>
+                                <li class="cell__text_li">представление интересов при проведении проверок
+                                    контролирующими органами;
+                                </li>
+                                <li class="cell__text_li">выявление и минимазация риска привлечения к уголовной,
+                                    административной и гражданско-правовой ответственности.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="cell__btn-wrap">
+                            <div class="cell__btn">задать вопрос</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__cell">
+                    <label class="cell" for="fake-check-7">
+                        <span class="cell__icon cell__icon-7"></span>
+                        <span class="cell__title">Трудовое право<br>и защита информации</span>
+                    </label>
+                    <input class="fake-check" id="fake-check-7" type="checkbox">
+                    <div class="cell__text">
+                        <div class="cell__text_title-wrap">
+                            <span class="cell__text_title cell__text_title-7">Трудовое право и защита информации</span>
+                            <label class="close" for="fake-check-7"></label>
+                        </div>
+                        <div class="cell__text_list">
+                            <ul class="cell__text_item">
+                                <li class="cell__text_li">Консультации по вопросам трудового права;</li>
+                                <li class="cell__text_li">сокращение, оптимизация и реструктуризация персонала;</li>
+                                <li class="cell__text_li">представление интересов работников и работодателей в судах;
+                                </li>
+                                <li class="cell__text_li">представление интересов при проведении проверок
+                                    контролирующими органами;
+                                </li>
+                                <li class="cell__text_li">разработка и внедрение локальных документов, необходимых для
+                                    введения режима
+                                    конфиденциальности, охраны персональных данных;
+                                </li>
+                                <li class="cell__text_li">консультирование по вопросам организации документооборота и
+                                    хранения информации.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="cell__btn-wrap">
+                            <div class="cell__btn">задать вопрос</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__cell">
+                    <label class="cell" for="fake-check-8">
+                        <span class="cell__icon cell__icon-8"></span>
+                        <span class="cell__title">Разрешение споров</span>
+                    </label>
+                    <input class="fake-check" id="fake-check-8" type="checkbox">
+                    <div class="cell__text">
+                        <div class="cell__text_title-wrap">
+                            <span class="cell__text_title cell__text_title-8">Разрешение споров</span>
+                            <label class="close" for="fake-check-8"></label>
+                        </div>
+                        <div class="cell__text_list">
+                            <ul class="cell__text_item">
+                                <p>В рамках разрешения споров наши юристы оказывают услуги на всех этапах,
+                                    в том числе в досудебном порядке, в суде и на этапе исполнения судебного акта.</p>
+                                <li class="cell__text_li">Корпоративные, коммерческие, хозяйственные, финансовые
+                                    споры;
+                                </li>
+                                <li class="cell__text_li">семейные споры (бракоразводные процессы, определение места
+                                    жительства детей, раздел имущества);
+                                </li>
+                                <li class="cell__text_li">споры по недействительности сделок;</li>
+                                <li class="cell__text_li">споры в сфере банкротства;</li>
+                                <li class="cell__text_li">трудовые споры;</li>
+                                <li class="cell__text_li">споры в сфере защиты прав потребителей (в том числе
+                                    на стороне производителей);
+                                </li>
+                                <li class="cell__text_li">подготовка правовых позиций, заключений и консультирование.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="cell__btn-wrap">
+                            <div class="cell__btn">задать вопрос</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-    let targetIdToShow = 1;
+<!-- section feedback -->
+<section class="section feedback">
+    <div class="container">
+        <div class="feedback__main">
+            <h2 class="title">Обратная связь</h2>
+        </div>
+    </div>
+</section>
 
-    function main() {
-
-        let targets = getElements(TARGET_CLASS_NAME);
-        let sources = getElements(SOURCE_CLASS_NAME);
-        sources.forEach((sourceNode) => {
-            let sourceNodeId = extractId(sourceNode, SOURCE_CLASS_NAME);
-            sourceNode.addEventListener("click", () => {
-                showTarget(targets, sourceNodeId);
-            })
-        })
-        showTarget(targets, targetIdToShow);
-    }
-
-    function getElements(type) {
-        return [].slice.call(document.querySelectorAll("." + type)).sort((targetNode1, targetNode2) => {
-            let target1Num = extractId(targetNode1, TARGET_CLASS_NAME);
-            let target2Num = extractId(targetNode2, TARGET_CLASS_NAME);
-            return target1Num > target2Num;
-        })
-    }
-
-    function extractId(targetNode, baseClass) {
-        let currentClassIndex = targetNode.classList.length;
-        while (currentClassIndex--) {
-            let currentClass = targetNode.classList.item(currentClassIndex);
-            let maybeIdNum = parseInt(currentClass.split("-")[1]);
-            if (isNaN(maybeIdNum)) {
-                continue
-            }
-            let classStringToValidate = baseClass + "-" + maybeIdNum;
-            if (classStringToValidate === currentClass) {
-                return maybeIdNum;
-            }
-        }
-    }
-
-    function showTarget(targets, targetId) {
-        targets.forEach((targetNode, targetIndex) => {
-            let currentTargetNodeId = extractId(targetNode, TARGET_CLASS_NAME);
-            if (currentTargetNodeId === targetId) {
-                targetNode.classList.remove(HIDDEN_CLASS_NAME);
-            } else {
-                targetNode.classList.add(HIDDEN_CLASS_NAME);
-            }
-        })
-    }
-
-    main()
-
-    // настройка для планшетных и мобильных устройств
-    let width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-    if (width < 769) {
-        document.querySelectorAll('.employee__wrap').forEach(n => n.classList.remove('hidden'));
-    }
-
-    // обновление страницы при развороте экрана
-    window.addEventListener("orientationchange", () => {
-        window.location.reload();
-    })
-
-
-    let EXPAND_CLASS_NAME = "expand";
-    let DOTS_CLASS_NAME = "dots";
-    let MORE_CLASS_NAME = "more";
-
-    function showMore() {
-        let expand = document.getElementsByClassName(EXPAND_CLASS_NAME);
-        let more = document.getElementsByClassName(MORE_CLASS_NAME);
-        let dots = document.getElementsByClassName(DOTS_CLASS_NAME);
-
-        [].forEach.call(expand, (expandBtn) => {
-            let expandBtnId = extractId(expandBtn, EXPAND_CLASS_NAME);
-            expandBtn.addEventListener("click", () => {
-                showTargetMore(more, expandBtnId);
-                showTargetBtn(expand, expandBtnId);
-                showTargetDots(dots, expandBtnId);
-            })
-        })
-
-        function showTargetMore(more, moreId) {
-            [].forEach.call(more, (moreText) => {
-                let currentMoreTextId = extractId(moreText, MORE_CLASS_NAME);
-                if (currentMoreTextId === moreId) {
-                    if (moreText.style.display === "none" || moreText.style.display === "") {
-                        moreText.style.display = "inline";
-                    } else {
-                        moreText.style.display = "none";
-                    }
-                } else {
-                    moreText.style.display = "none";
-                }
-            })
-        }
-
-        function showTargetBtn(expand, expandId) {
-            [].forEach.call(expand, (btn) => {
-                let currentExpandId = extractId(btn, EXPAND_CLASS_NAME);
-                if (currentExpandId === expandId) {
-                    if (btn.innerText === "Подробнее") {
-                        btn.innerText = "Скрыть";
-                        btn.style.backgroundImage = "url('images/icon-next-up.png')";
-                    } else {
-                        btn.innerText = "Подробнее";
-                        btn.style.backgroundImage = "url('images/icon-next-down.png')";
-                    }
-                } else {
-                    btn.innerText = "Подробнее";
-                    btn.style.backgroundImage = "url('images/icon-next-down.png')";
-                }
-            })
-        }
-
-        function showTargetDots(dots, dotsId) {
-            [].forEach.call(dots, (dots) => {
-                let currentDotsId = extractId(dots, DOTS_CLASS_NAME);
-                if (currentDotsId === dotsId) {
-                    if (dots.style.display === "inline" || dots.style.display === "") {
-                        dots.style.display = "none";
-                    } else {
-                        dots.style.display = "inline";
-                    }
-                } else {
-                    dots.style.display = "inline";
-                }
-            })
-        }
-    }
-
-    showMore();
-
-    // let dots = document.getElementsByClassName("dots");
-    // let textMore = document.getElementsByClassName("more");
-    // let btnText = document.getElementsByClassName("btn");
-
-    // if (dots.style.display === "none") {
-    //     dots.style.display = "inline";
-    //     btnText.innerText = "Подробнее";
-    //     btnText.style.backgroundImage = "url('images/icon-next-down.png')";
-    //     textMore.style.display = "none";
-    // } else {
-    //     dots.style.display = "none";
-    //     btnText.innerText = "Свернуть";
-    //     btnText.style.backgroundImage = "url('images/icon-next-up.png')";
-    //     textMore.style.display = "inline";
-    // }
-
-</script>
+<script src="script/script.js"></script>
 
 
 <!--&lt;!&ndash;Services&ndash;&gt;-->
