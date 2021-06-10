@@ -54,11 +54,31 @@
                         </li>
                     </ul>
                 </nav>
-                <button class="burger">
-                    <span class="burger__item"> </span>
-                    <span class="burger__item"> </span>
-                    <span class="burger__item"> </span>
-                </button>
+                <div class="burger__wrap">
+                    <label class="burger" for="burger-check">
+                        <span class="burger__item"> </span>
+                        <span class="burger__item"> </span>
+                        <span class="burger__item"> </span>
+                    </label>
+                    <input class="fake-check" id="burger-check" type="checkbox">
+                    <div class="menu">
+                        <div class="menu__label">
+                            <label class="close menu__close" for="burger-check"></label>
+                        </div>
+                        <div class="menu__list_wrap">
+                            <ul class="menu__list">
+                                <li><a class="menu__item" href="#">главная</a></li>
+                                <li><a class="menu__item" href="#">о компании</a></li>
+                                <li><a class="menu__item" href="#">услуги</a></li>
+                                <li><a class="menu__item" href="#">новости</a></li>
+                                <li><a class="menu__item" href="#">контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
             </div>
         </div>
     </header>
@@ -316,6 +336,7 @@
                             <span class="cell__text_title cell__text_title-2">Защита прав потребителя</span>
                             <label class="close" for="fake-check-2"></label>
                         </div>
+                        z\
                         <div class="cell__text_list">
                             <ul class="cell__text_item">
                                 <li class="cell__text_li">Сопровождение споров
@@ -543,347 +564,75 @@
     <div class="container">
         <div class="feedback__main">
             <h2 class="title">Обратная связь</h2>
+            <h3 class="feedback__text_wrap">
+                <p class="feedback__text">
+                    Свяжитесь с&nbsp;нами для индивидуальной
+                    <br>проработки Вашего&nbsp;вопроса.</p>
+            </h3>
+            <div class="feedback__form">
+                <form action="" method="post">
+                    <div class="feedback__grid">
+                        <div class="feedback__grid_cell">
+                            <div class="item">
+                                <label class="item__reporter">
+                                    <input class="radio" type="radio" name="reporter-type" value="Физ.лицо">
+                                    <span class="fake"></span>
+                                    <span class="radio-text">Частное лицо</span>
+                                </label>
+                                <label class="item__reporter item__reporter2">
+                                    <input class="radio" type="radio" name="reporter-type" value="Юр.лицо">
+                                    <span class="fake"></span>
+                                    <span class="radio-text">Представитель бизнеса</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="feedback__grid_cell">
+                            <div class="item">
+                                <label class="item__fullname" for="fullname">Ваше ФИО:</label>
+                                <input class="field" type="text" id="fullname" name="full name" placeholder="Введите ФИО">
+                            </div>
+                        </div>
+                        <div class="feedback__grid_cell">
+                            <div class="item item-email">
+                                <label class="email" for="email">Ваш e-mail:</label>
+                                <input class="field" type="text" id="email" name="e-mail" placeholder="Введите e-mail">
+                            </div>
+                        </div>
+                        <div class="feedback__grid_cell">
+                            <div class="item item-phone">
+                                <label class="phone" for="phone">Ваш телефон:</label>
+                                <input class="field" type="text" id="phone" name="phone" placeholder="+7(___) ___-__-__ ">
+                            </div>
+                        </div>
+                        <div class="feedback__grid_cell">
+                            <div class="item item-message">
+                                <label class="message" for="message">
+                                    <span class="message-text">Кратко опишите Вашу ситуацию:</span>
+                                </label>
+                                <textarea class="field field-message" type="text" id="message" name="message" placeholder="Ваше сообщение"></textarea>
+                            </div>
+                        </div>
+                        <div class="feedback__grid_cell">
+                            <label class="consent">
+                                <input class="check" type="checkbox" name="consent" value="OK">
+                                <span class="fake fake-checkbox"></span>
+                                <span class="check-text">Даю согласие на обработку персональных данных</span>
+                            </label>
+                        </div>
+                        <div class="feedback__grid_cell">
+                            <div class="item item-btn">
+                                <input class="field-btn btn2" type="submit" value="получить консультацию">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </section>
 
 <script src="script/script.js"></script>
 
-
-<!--&lt;!&ndash;Services&ndash;&gt;-->
-
-<!--<section class="section-outer section-services">-->
-<!--    <div class="delimiter">Разделитеть</div>-->
-<!--    <div class="section-inner section-services-inner">-->
-<!--        <div class="section-services-main">-->
-<!--            <div class="h1-title">Перечень оказываемых услуг</div>-->
-<!--            <div class="grid-main">-->
-<!--                <div class="grid-main-cell">-->
-<!--                    <label class="cell" for="fake-check-1">-->
-<!--                        <span class="cell-icon icon-1"></span>-->
-<!--                        <span class="cell-title">Банкротство</span>-->
-<!--                    </label>-->
-<!--                    <input class="fake-check" id="fake-check-1" type="checkbox">-->
-<!--                    <div class="cell-text">-->
-<!--                        <span class="cell-text-title cell-text-title-1">Банкротство</span>-->
-<!--                        <label class="close" for="fake-check-1"></label>-->
-<!--                        <div class="cell-text-paragraph">-->
-<!--                            <ul class="paragraph">-->
-<!--                                <li>Cопровождение процедур банкротства как на стороне должника, так и на стороне-->
-<!--                                    кредитора;-->
-<!--                                </li>-->
-<!--                                <li>защита и оспаривание сделок должника, возврат выведенных активов;</li>-->
-<!--                                <li>сопровождение процесса включения в реестр требований кредиторов;</li>-->
-<!--                                <li>недопущение включения в реестр необоснованных требований кредиторов;</li>-->
-<!--                                <li>назначение и сопровождение работы арбитражного управляющего;</li>-->
-<!--                                <li>сопровождение мероприятий по привлечению контролирующих лиц должника к-->
-<!--                                    ответственности (уголовной, гражданско-правовой);-->
-<!--                                </li>-->
-<!--                                <li>защита от необоснованного привлечения к субсидиарной ответственности;</li>-->
-<!--                                <li>подготовка правовых заключений, проведение консультаций по вопросам банкротства-->
-<!--                                    различной степени сложности.-->
-<!--                                </li>-->
-<!--                            </ul>-->
-<!--                        </div>-->
-<!--                        <div class="button btn">задать вопрос</div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="grid-main-cell">-->
-<!--                    <label class="cell" for="fake-check-2">-->
-<!--                        <span class="cell-icon icon-2"></span>-->
-<!--                        <span class="cell-title">Защита прав потребителя</span>-->
-<!--                    </label>-->
-<!--                    <input class="fake-check" id="fake-check-2" type="checkbox">-->
-<!--                    <div class="cell-text">-->
-<!--                        <span class="cell-text-title cell-text-title-2">Защита прав потребителя</span>-->
-<!--                        <label class="close" for="fake-check-2"></label>-->
-<!--                        <div class="cell-text-paragraph">-->
-<!--                            <ul class="paragraph">-->
-<!--                                <li>Cопровождение процедур банкротства как на стороне должника, так и на стороне-->
-<!--                                    кредитора;-->
-<!--                                </li>-->
-<!--                                <li>защита и оспаривание сделок должника, возврат выведенных активов;</li>-->
-<!--                                <li>сопровождение процесса включения в реестр требований кредиторов;</li>-->
-<!--                                <li>недопущение включения в реестр необоснованных требований кредиторов;</li>-->
-<!--                                <li>назначение и сопровождение работы арбитражного управляющего;</li>-->
-<!--                                <li>сопровождение мероприятий по привлечению контролирующих лиц должника к-->
-<!--                                    ответственности (уголовной, гражданско-правовой);-->
-<!--                                </li>-->
-<!--                                <li>защита от необоснованного привлечения к субсидиарной ответственности;</li>-->
-<!--                                <li>подготовка правовых заключений, проведение консультаций по вопросам банкротства-->
-<!--                                    различной степени сложности.-->
-<!--                                </li>-->
-<!--                            </ul>-->
-<!--                        </div>-->
-<!--                        <div class="button btn">задать вопрос</div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="grid-main-cell">-->
-<!--                    <label class="cell" for="fake-check-3">-->
-<!--                        <span class="cell-icon icon-3"></span>-->
-<!--                        <span class="cell-title">Корпоративное право</span>-->
-<!--                    </label>-->
-<!--                    <input class="fake-check" id="fake-check-3" type="checkbox">-->
-<!--                    <div class="cell-text">-->
-<!--                        <span class="cell-text-title cell-text-title-3">Корпоративное право</span>-->
-<!--                        <label class="close" for="fake-check-3"></label>-->
-<!--                        <div class="cell-text-paragraph">-->
-<!--                            <ul class="paragraph">-->
-<!--                                <li>Cопровождение процедур банкротства как на стороне должника, так и на стороне-->
-<!--                                    кредитора;-->
-<!--                                </li>-->
-<!--                                <li>защита и оспаривание сделок должника, возврат выведенных активов;</li>-->
-<!--                                <li>сопровождение процесса включения в реестр требований кредиторов;</li>-->
-<!--                                <li>недопущение включения в реестр необоснованных требований кредиторов;</li>-->
-<!--                                <li>назначение и сопровождение работы арбитражного управляющего;</li>-->
-<!--                                <li>сопровождение мероприятий по привлечению контролирующих лиц должника к-->
-<!--                                    ответственности-->
-<!--                                    (уголовной, гражданско-правовой);-->
-<!--                                </li>-->
-<!--                                <li>защита от необоснованного привлечения к субсидиарной ответственности;</li>-->
-<!--                                <li>подготовка правовых заключений, проведение консультаций по вопросам банкротства-->
-<!--                                    различной степени сложности.-->
-<!--                                </li>-->
-<!--                            </ul>-->
-<!--                        </div>-->
-<!--                        <div class="button btn">задать вопрос</div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="grid-main-cell">-->
-<!--                    <label class="cell" for="fake-check-4">-->
-<!--                        <span class="cell-icon icon-4"></span>-->
-<!--                        <span class="cell-title">Семейное право</span>-->
-<!--                    </label>-->
-<!--                    <input class="fake-check" id="fake-check-4" type="checkbox">-->
-<!--                    <div class="cell-text">-->
-<!--                        <span class="cell-text-title cell-text-title-4">Семейное право</span>-->
-<!--                        <label class="close" for="fake-check-4"></label>-->
-<!--                        <div class="cell-text-paragraph">-->
-<!--                            <ul class="paragraph">-->
-<!--                                <li>Cопровождение процедур банкротства как на стороне должника, так и на стороне-->
-<!--                                    кредитора;-->
-<!--                                </li>-->
-<!--                                <li>защита и оспаривание сделок должника, возврат выведенных активов;</li>-->
-<!--                                <li>сопровождение процесса включения в реестр требований кредиторов;</li>-->
-<!--                                <li>недопущение включения в реестр необоснованных требований кредиторов;</li>-->
-<!--                                <li>назначение и сопровождение работы арбитражного управляющего;</li>-->
-<!--                                <li>сопровождение мероприятий по привлечению контролирующих лиц должника к-->
-<!--                                    ответственности-->
-<!--                                    (уголовной, гражданско-правовой);-->
-<!--                                </li>-->
-<!--                                <li>защита от необоснованного привлечения к субсидиарной ответственности;</li>-->
-<!--                                <li>подготовка правовых заключений, проведение консультаций по вопросам банкротства-->
-<!--                                    различной степени сложности.-->
-<!--                                </li>-->
-<!--                            </ul>-->
-<!--                        </div>-->
-<!--                        <div class="button btn">задать вопрос</div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="grid-main-cell">-->
-<!--                    <label class="cell" for="fake-check-5">-->
-<!--                        <span class="cell-icon icon-5"></span>-->
-<!--                        <span class="cell-title">Недвижимость</span>-->
-<!--                    </label>-->
-<!--                    <input class="fake-check" id="fake-check-5" type="checkbox">-->
-<!--                    <div class="cell-text">-->
-<!--                        <span class="cell-text-title cell-text-title-5">Недвижимость</span>-->
-<!--                        <label class="close" for="fake-check-5"></label>-->
-<!--                        <div class="cell-text-paragraph">-->
-<!--                            <ul class="paragraph">-->
-<!--                                <li>Cопровождение процедур банкротства как на стороне должника, так и на стороне-->
-<!--                                    кредитора;-->
-<!--                                </li>-->
-<!--                                <li>защита и оспаривание сделок должника, возврат выведенных активов;</li>-->
-<!--                                <li>сопровождение процесса включения в реестр требований кредиторов;</li>-->
-<!--                                <li>недопущение включения в реестр необоснованных требований кредиторов;</li>-->
-<!--                                <li>назначение и сопровождение работы арбитражного управляющего;</li>-->
-<!--                                <li>сопровождение мероприятий по привлечению контролирующих лиц должника к-->
-<!--                                    ответственности-->
-<!--                                    (уголовной, гражданско-правовой);-->
-<!--                                </li>-->
-<!--                                <li>защита от необоснованного привлечения к субсидиарной ответственности;</li>-->
-<!--                                <li>подготовка правовых заключений, проведение консультаций по вопросам банкротства-->
-<!--                                    различной степени сложности.-->
-<!--                                </li>-->
-<!--                            </ul>-->
-<!--                        </div>-->
-<!--                        <div class="button btn">задать вопрос</div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="grid-main-cell">-->
-<!--                    <label class="cell" for="fake-check-6">-->
-<!--                        <span class="cell-icon icon-6"></span>-->
-<!--                        <span class="cell-title">Юридическое<br>сопровождение бизнеса</span>-->
-<!--                    </label>-->
-<!--                    <input class="fake-check" id="fake-check-6" type="checkbox">-->
-<!--                    <div class="cell-text">-->
-<!--                        <span class="cell-text-title cell-text-title-6">Юридическое<br>сопровождение бизнеса</span>-->
-<!--                        <label class="close" for="fake-check-6"></label>-->
-<!--                        <div class="cell-text-paragraph">-->
-<!--                            <ul class="paragraph">-->
-<!--                                <li>Cопровождение процедур банкротства как на стороне должника, так и на стороне-->
-<!--                                    кредитора;-->
-<!--                                </li>-->
-<!--                                <li>защита и оспаривание сделок должника, возврат выведенных активов;</li>-->
-<!--                                <li>сопровождение процесса включения в реестр требований кредиторов;</li>-->
-<!--                                <li>недопущение включения в реестр необоснованных требований кредиторов;</li>-->
-<!--                                <li>назначение и сопровождение работы арбитражного управляющего;</li>-->
-<!--                                <li>сопровождение мероприятий по привлечению контролирующих лиц должника к-->
-<!--                                    ответственности-->
-<!--                                    (уголовной, гражданско-правовой);-->
-<!--                                </li>-->
-<!--                                <li>защита от необоснованного привлечения к субсидиарной ответственности;</li>-->
-<!--                                <li>подготовка правовых заключений, проведение консультаций по вопросам банкротства-->
-<!--                                    различной степени сложности.-->
-<!--                                </li>-->
-<!--                            </ul>-->
-<!--                        </div>-->
-<!--                        <div class="button btn">задать вопрос</div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="grid-main-cell">-->
-<!--                    <label class="cell" for="fake-check-7">-->
-<!--                        <span class="cell-icon icon-7"></span>-->
-<!--                        <span class="cell-title">Трудовое право<br>и защита информации</span>-->
-<!--                    </label>-->
-<!--                    <input class="fake-check" id="fake-check-7" type="checkbox">-->
-<!--                    <div class="cell-text">-->
-<!--                        <span class="cell-text-title cell-text-title-7">Трудовое право<br>и защита информации</span>-->
-<!--                        <label class="close" for="fake-check-7"></label>-->
-<!--                        <div class="cell-text-paragraph">-->
-<!--                            <ul class="paragraph">-->
-<!--                                <li>Cопровождение процедур банкротства как на стороне должника, так и на стороне-->
-<!--                                    кредитора;-->
-<!--                                </li>-->
-<!--                                <li>защита и оспаривание сделок должника, возврат выведенных активов;</li>-->
-<!--                                <li>сопровождение процесса включения в реестр требований кредиторов;</li>-->
-<!--                                <li>недопущение включения в реестр необоснованных требований кредиторов;</li>-->
-<!--                                <li>назначение и сопровождение работы арбитражного управляющего;</li>-->
-<!--                                <li>сопровождение мероприятий по привлечению контролирующих лиц должника к-->
-<!--                                    ответственности-->
-<!--                                    (уголовной, гражданско-правовой);-->
-<!--                                </li>-->
-<!--                                <li>защита от необоснованного привлечения к субсидиарной ответственности;</li>-->
-<!--                                <li>подготовка правовых заключений, проведение консультаций по вопросам банкротства-->
-<!--                                    различной степени сложности.-->
-<!--                                </li>-->
-<!--                            </ul>-->
-<!--                        </div>-->
-<!--                        <div class="button btn">задать вопрос</div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="grid-main-cell">-->
-<!--                    <label class="cell" for="fake-check-8">-->
-<!--                        <span class="cell-icon icon-8"></span>-->
-<!--                        <span class="cell-title">Разрешение споров</span>-->
-<!--                    </label>-->
-<!--                    <input class="fake-check" id="fake-check-8" type="checkbox">-->
-<!--                    <div class="cell-text">-->
-<!--                        <span class="cell-text-title cell-text-title-8">Разрешение споров</span>-->
-<!--                        <label class="close" for="fake-check-8"></label>-->
-<!--                        <div class="cell-text-paragraph">-->
-<!--                            <ul class="paragraph">-->
-<!--                                <li>Cопровождение процедур банкротства как на стороне должника, так и на стороне-->
-<!--                                    кредитора;-->
-<!--                                </li>-->
-<!--                                <li>защита и оспаривание сделок должника, возврат выведенных активов;</li>-->
-<!--                                <li>сопровождение процесса включения в реестр требований кредиторов;</li>-->
-<!--                                <li>недопущение включения в реестр необоснованных требований кредиторов;</li>-->
-<!--                                <li>назначение и сопровождение работы арбитражного управляющего;</li>-->
-<!--                                <li>сопровождение мероприятий по привлечению контролирующих лиц должника к-->
-<!--                                    ответственности-->
-<!--                                    (уголовной, гражданско-правовой);-->
-<!--                                </li>-->
-<!--                                <li>защита от необоснованного привлечения к субсидиарной ответственности;</li>-->
-<!--                                <li>подготовка правовых заключений, проведение консультаций по вопросам банкротства-->
-<!--                                    различной степени сложности.-->
-<!--                                </li>-->
-<!--                            </ul>-->
-<!--                        </div>-->
-<!--                        <div class="button btn">задать вопрос</div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
-
-<!--&lt;!&ndash;/Services&ndash;&gt;-->
-
-
-<!--&lt;!&ndash; Feedback &ndash;&gt;-->
-
-<!--<section class="section-outer section-feedback">-->
-<!--    <div class="delimiter">Разделитеть</div>-->
-<!--    <div class="section-inner section-feedback-inner">-->
-<!--        <div class="section-feedback-main">-->
-<!--            <div class="h1-title">Обратная связь</div>-->
-<!--            <div class="h2-title">Свяжитесь с нами для индивидуальной-->
-<!--                <br>проработки Вашего вопроса.-->
-<!--            </div>-->
-<!--            <form class="feedback-form" action="" method="post">-->
-<!--                <div class="feedback-grid">-->
-<!--                    <div class="grid-item">-->
-<!--                        <div class="item item-reporter">-->
-<!--                            <label class="reporter-type">-->
-<!--                                <input class="radio" type="radio" name="reporter-type" value="Физ.лицо">-->
-<!--                                <span class="fake"></span>-->
-<!--                                <span class="radio-text">Частное лицо</span>-->
-<!--                            </label>-->
-<!--                            <label class="reporter-type">-->
-<!--                                <input class="radio" type="radio" name="reporter-type" value="Юр.лицо">-->
-<!--                                <span class="fake"></span>-->
-<!--                                <span class="radio-text">Представитель бизнеса</span>-->
-<!--                            </label>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="grid-item">-->
-<!--                        <div class="item item-fullname">-->
-<!--                            <label class="fullname" for="fullname">Ваше ФИО:</label>-->
-<!--                            <input class="field" type="text" id="fullname" name="full name" placeholder="Введите ФИО">-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="grid-item">-->
-<!--                        <div class="item item-email">-->
-<!--                            <label class="email" for="email">Ваш e-mail:</label>-->
-<!--                            <input class="field" type="text" id="email" name="e-mail" placeholder="Введите e-mail">-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="grid-item">-->
-<!--                        <div class="item item-phone">-->
-<!--                            <label class="phone" for="phone">Ваш телефон:</label>-->
-<!--                            <input class="field" type="text" id="phone" name="phone" placeholder="+7(___) ___-__-__ ">-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="grid-item">-->
-<!--                        <div class="item item-message">-->
-<!--                            <label class="message" for="message">-->
-<!--                                <span class="message-text">Кратко опишите Вашу ситуацию:</span>-->
-<!--                            </label>-->
-<!--                            <textarea class="field field-message" type="text" id="message" name="message"-->
-<!--                                      placeholder="Ваше сообщение"></textarea>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="grid-item">-->
-<!--                        <label class="consent">-->
-<!--                            <input class="check" type="checkbox" name="consent" value="OK">-->
-<!--                            <span class="fake fake-checkbox"></span>-->
-<!--                            <span class="check-text">Даю согласие на обработку персональных данных</span>-->
-<!--                        </label>-->
-<!--                    </div>-->
-<!--                    <div class="grid-item">-->
-<!--                        <div class="item item-btn">-->
-<!--                            <input class="field-btn btn2" type="submit" value="получить консультацию">-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </form>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
-
-<!--&lt;!&ndash; /Feedback &ndash;&gt;-->
 
 
 <!--&lt;!&ndash; Footer &ndash;&gt;-->
